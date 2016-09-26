@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>nine-grid</title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+		}
+		.tables{
+			border-collapse:collapse;
+			margin-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #fff;
+		}
+		.tds{
+			width: 90px;
+			height: 90px;
+			border: 5px solid blue;
+		}
+		.tds div{
+			position: relative;
+			width: 90px;
+			height: 90px;
+		}
+		.tds div span{
+		  	display:block;
+			text-align: center;
+			line-height: 90px;
+			font-size: 30px;
+			width: 90px;
+			height: 90px;
+			text-decoration: underline;
+		}
+		.tds div span:hover{
+			position: absolute;
+			top: -5px;
+			left: -5px;
+			width: 90px;
+			height: 90px;
+			border:5px solid red;
+		}
+	</style>
+</head>
+<body>
+	<table class="tables">
+		<tr class="trs">
+			<td class="tds"><div><span>1</span></div></td>
+			<td class="tds"><div><span>2</span></div></td>
+			<td class="tds"><div><span>3</span></div></td>
+		</tr>
+		<tr class="trs">
+			<td class="tds"><div><span>4</span></div></td>
+			<td class="tds"><div><span>5</span></div></td>
+			<td class="tds"><div><span>6</span></div></td>
+		</tr>
+		<tr class="trs">
+			<td class="tds"><div><span>7</span></div></td>
+			<td class="tds"><div><span>8</span></div></td>
+			<td class="tds"><div><span>9</span></div></td>
+		</tr>
+	</table>
+</body>
+</html>
